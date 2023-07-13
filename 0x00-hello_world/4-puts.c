@@ -1,8 +1,7 @@
 #include <stdio.h>
-/*
- * this is the main function for our program 
- * this will print "Programming is like building a multilingual puzzle
- * will return 0
+/**
+ * main - A program that prints line using puts function
+ * Return : 0 (Sucess)
  */
 int main(void)
 {
