@@ -1,1 +1,2 @@
-char _putchar (void);
+#define "main.h"
+int _putchar (char);
