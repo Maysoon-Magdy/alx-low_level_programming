@@ -1,11 +1,21 @@
 #include "main.h"
-#include<unistd.h>
+#include <stdio.h>
 /**
- * main - A program that create print char followed by a new line
- * *
- * return - Always 0 - (Success)
+ * main - A program that prints line using prinf function
+ *
+ * Return: Always 0 (Success)
  */
-int _putchar(char c)
+int main(void)
 {
-return (write(1, &c, 1));
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+	return (0);
 }
+
