@@ -16,7 +16,7 @@ for (c = '0'; c <= '9' ; c++)
 {
 for (d = '0' ; d <= '9' ; d++)
 {
-if ((a == c && b == d) || (a == c && b > d))
+if ((a == c && b == d) || (a == c && b > d) || (b == d && a > c))
 continue;
 putchar(a);
 putchar(b);
