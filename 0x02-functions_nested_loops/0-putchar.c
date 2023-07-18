@@ -1,5 +1,5 @@
 #include "main.h"
-#include<stdio.h>
+#include<unistd.h>
 /**
  * main - A program that create print char followed by a new line
  * *
