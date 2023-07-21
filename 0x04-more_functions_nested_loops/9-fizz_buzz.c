@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * main - check the code
  *
@@ -22,4 +23,5 @@ int main(void)
 		printf(" ");
 	}
 	printf("\n");
+	return (0);
 }
