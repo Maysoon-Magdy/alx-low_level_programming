@@ -20,7 +20,8 @@ int main(void)
 			printf("Buzz");
 		else
 			printf("%lu", x);
-		printf(" ");
+		if (x < 100)
+			printf(" ");
 	}
 	printf("\n");
 	return (0);
