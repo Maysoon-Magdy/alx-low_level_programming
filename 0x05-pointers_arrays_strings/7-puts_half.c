@@ -14,6 +14,9 @@ void puts_half(char *str)
 		i++;
 	half = i / 2;
 
+	if (i % 2 == 1)
+		half++;
+
 	while (str[half])
 	{
 		printf("%c", *(str + half));
