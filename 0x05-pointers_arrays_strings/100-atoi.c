@@ -14,7 +14,7 @@ int _atoi(char *s)
 		if (*s == '-')
 			sign = sign * -1;
 		else if (*s >= '0' && *s <= '9')
-			number = (numb * 10) + (*s - '0');
+			number = (number * 10) + (*s - '0');
 		else if (number > 0)
 			break;
 	} while (*s++);
