@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * string_toupper -  a function.
+ * string_toupper - function
  *
+ * Description: 'the program's description'
  * @n: string
- * return: string
+ * Return: n
  */
-
 char *string_toupper(char *n)
 {
 	int i;
