@@ -7,7 +7,7 @@
  * Return: always 0 success
  *
  */
-int main(int args, char *argv[])
+int main(int argc, char *argv[])
 {
 	int num1, num2, mul;
 
