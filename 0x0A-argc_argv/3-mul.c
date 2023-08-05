@@ -7,18 +7,18 @@
  */
 int _atoi(char *s)
 {
-        unsigned int number = 0;
-        int sign = 1;
+unsigned int number = 0;
+int sign = 1;
 
-        do {
-                if (*s == '-')
-                        sign = sign * -1;
-                else if (*s >= '0' && *s <= '9')
-                        number = (number * 10) + (*s - '0');
-                else if (number > 0)
-                        break;
-        } while (*s++);
-        return (number * sign);
+do {
+if (*s == '-')
+sign = sign * -1;
+else if (*s >= '0' && *s <= '9')
+number = (number * 10) + (*s - '0');
+else if (number > 0)
+break;
+} while (*s++);
+return (number *sign);
 }
 /**
  * main -  a program that prints its name, followed by a new line.
