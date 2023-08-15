@@ -1,5 +1,5 @@
 #include "dog.h"
-#include <stdlib>
+#include <stdlib.h>
 
 /**
  * _strlen - return the length of the string
@@ -26,11 +26,15 @@ int _strlen(char *s)
  *
  * Return: the dest string
  */
-char *strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int len, i;
 
 	len = 0;
+	while (src[len] != '\0')
+	{
+		len++;
+	}
 
 	for (i = 0; i < len; i++)
 	{
@@ -76,8 +80,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	_strcpy(dog->name);
-	_strcpy(dog->owner);
+	_strcpy(dog->name, name);
+	_strcpy(dog->owner, owner);
 	dog->age = age;
 
 	return (dog);
