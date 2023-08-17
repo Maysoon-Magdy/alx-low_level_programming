@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <sydlib.h>
+#include <stdlib.h>
 
 /**
  * main - prints its opcodes
