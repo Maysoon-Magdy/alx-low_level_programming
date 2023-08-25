@@ -12,18 +12,18 @@ list_t *add_node(list_t **head, const char *str)
 {
 	list_t *updated_head = malloc(sizeof(list_t));
 
-	if (!head)
+	if (!head || !updated_head || !str)
 		return (NULL);
 
 	if (str)
 	{
 		updated_head->str = strdup(str);
-		if (!updated_head->str)
+	/*	if (!updated_head->str)
 		{
 			free(updated_head);
 			return (NULL);
 		}
-		updated_head->len = strlen(updated_head->str);
+	*/	updated_head->len = strlen(updated_head->str);
 	}
 
 	updated_head->next = *head;
