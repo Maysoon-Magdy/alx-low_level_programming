@@ -3,8 +3,7 @@
 void _constructor(void) __attribute__ ((constructor));
 
 /**
- * _constrictor - first thing to be executed
- *
+ * _constructor - first thing to be executed
 */
 
 void _constructor(void)
