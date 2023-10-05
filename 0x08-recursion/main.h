@@ -13,4 +13,6 @@ int wildcmp(char *s1, char *s2);
 int _putchar(char c);
 int square(int n, int expected);
 int is_prime(int n, int x);
+int _strlen_recursion(char *s);
+int _str_compare(char *s, int start, int end);
 #endif
