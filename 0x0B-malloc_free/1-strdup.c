@@ -9,7 +9,7 @@
 char *_strdup(char *str)
 {
 	char *s;
-	int size = 0;
+	int i = 0;
 
 	if (str == NULL)
 		return (NULL);
@@ -21,7 +21,7 @@ char *_strdup(char *str)
 
 	else
 	{
-		for (int i = 0; i < sizeof(str); i++)
+		for (i = 0; i < sizeof(str); i++)
 			s[i] = str[i];
 	}
 
