@@ -44,7 +44,7 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0; i < num; i++)
 	{
-		for (j = 0; args[i][j] != "\0"; j++, args++)
+		for (j = 0; av[i][j] != "\0"; j++, args++)
 			s[args] = av[i][j];
 
 		s[args] = "\n";
