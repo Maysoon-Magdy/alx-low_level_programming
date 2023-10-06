@@ -44,12 +44,12 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0; i < num; i++)
 	{
-		for (j = 0; av[i][j] != "\0"; j++, args++)
+		for (j = 0; av[i][j] != '\0'; j++, args++)
 			s[args] = av[i][j];
 
-		s[args] = "\n";
+		s[args] = '\n';
 		args++;
 	}
-	s[args] = "\0";
+	s[args] = '\0';
 	return (s);
 }
