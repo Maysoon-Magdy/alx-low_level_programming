@@ -8,19 +8,24 @@
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	unsigned int num = n;
+	unsigned int num;
 	char *str;
 	va_list ptr;
 
 	va_start(ptr, n);
-	if (!n)
-	{
-		printf("\n");
-		return;
-	}
 
-	while (num--)
-		printf("%s%s", (str = va_arg(ptr, char *)) ? str : "(nil",
-			num ? (separator ? separator : "") : "\n");
+	for (num = 0; num < n; num++)
+	{
+		str = va_arg(ptr, char *);
+
+		if (str == NULL)
+			printf("(nil)");
+		else
+			printf("%s", str);
+
+		if (num != (n - 1) && separator != NULL)
+			printf("%s", separator);
+	}
+	printf("\n");
 	va_end(ptr);
 }
