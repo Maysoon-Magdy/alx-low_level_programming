@@ -1,4 +1,5 @@
-#include "main.h"
+#include "variadic_functions.h"
+#include <stdarg.h>
 /**
  * print_strings - a function that prints numbers
  * followed by a new line.
