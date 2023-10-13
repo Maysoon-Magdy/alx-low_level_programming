@@ -9,6 +9,7 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	int num = n;
+	char *str;
 	va_list ptr;
 
 	if (!n)
@@ -19,7 +20,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	va_start(ptr, n);
 	while (num--)
-		printf("%s%s", (str = va_arg(ptr, char *)) ? str : "(nil"),
-			i ? (separator ? separator : "") : '\n');
+		printf("%s%s", (str = va_arg(ptr, char *)) ? str : "(nil",
+			num ? (separator ? separator : "") : "\n");
 	va_end(ptr);
 }
