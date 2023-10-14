@@ -1,4 +1,6 @@
 #include "function_pointers.h"
+#include <stdlib.h>
+#include "3-calc.h"
 /**
  * get_op_func - selects the correct function to perform the operation.
  * @s: the operator
