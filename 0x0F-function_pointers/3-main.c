@@ -4,8 +4,9 @@
 #include <stdlib.h>
 /**
  * main - the main function
- *
- * Return - always 0
+ * @argc: The number of arguments supplied to the program.
+ * @argv: An array of pointers to the arguments.
+ * Return: Always 0
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
